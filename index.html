@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Namdhinggo:wght@400;500;600;700;800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Protest+Riot&display=swap"
+        rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url("bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+
+    }
+
+    #header {
+        text-align: center;
+        text-decoration: underline;
+        border: 2px solid rgb(55, 55, 170);
+        font-size: 55px;
+        font-family: "Protest Riot", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .dd {
+        /* display: none; */
+        height: 550px;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        color: aliceblue;
+        
+    }
+
+    .da,.db,.dc,.de {
+        text-align: center;
+        padding: 20px;
+        border: 1px solid #ccc;
+        background-color: rgb(32, 73, 123);
+        margin: 45px;
+        height: 235px;
+        width: 620px;
+        opacity: 0.5;
+        display: none;
+        /* display: flex; */
+
+    }
+
+    u {
+        font-size: 25px;
+    }
+
+    img {
+        height: 198px;
+    }
+
+    span {
+        font-size: 22px;
+        /* margin: 0; */
+    }
+
+    .d2 {
+        display: flex;
+    }
+    
+    button{
+        border: 2px solid blue;
+        padding: 15px;
+        border-radius: 8px;
+    }
+    button:hover{
+        background-color: aqua;
+        cursor: pointer;
+    }
+
+</style>
+
+<script>
+    $(document).ready(function(){
+      $("#button1").click(function(){
+        $(".da").fadeIn();
+        $(".db").fadeIn(1000);
+        $(".dc").fadeIn(2000);
+        $(".de").fadeIn(3000);
+      });
+
+      $("#button2").click(function(){
+        $(".da").fadeOut(3000);
+        $(".db").fadeOut(2000);
+        $(".dc").fadeOut(1000);
+        $(".de").fadeOut();
+      });
+    });
+    </script>
+
+
+</head>
+<body>
+    <h1 id="header"><button id="button1">FADE IN</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; EVENTS IN OUR UNIVERSITY &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="button2">FADE OUT</button></h1><br>
+    <div class="dd">
+
+        <div class="da"><u style="font-size: 30px;">sports event</u><br><br>
+            <div class="d2"><img src="sports.jpg"><span>In Ganpat university we all celebreate sports event and it's
+                    happense for the 1 or 2 weeks aproximately.And all the students who have skills in sports they get
+                    the oppurtunity to prove thair strength.</span></div>
+        </div>
+        <div class="db"><u style="font-size: 30px;">convocation event</u><br><br>
+            <div class="d2"><img src="conv.jpg"><span>A Convocation procession following the norms of social distancing
+                    was carried out consisting the imminent leaders of the university, deans of various faculties and a
+                    few gold medalist students and Research scholars who were priorly invited with consents.</span>
+            </div>
+        </div>
+        <div class="dc"><u style="font-size: 30px;">navratri event</u><br><br>
+            <div class="d2"><img src="navratri.jpg"><span>. As per the tradition, the Aarti event started at around 6:30
+                    PM followed by the Garba. The majority of students showed enthusiasm and participated in the Garba
+                    with their friends.
+                    After enjoying the Garba, it was time to have snacks at the food stalls present on the
+                    ground.</span></div>
+        </div>
+        <div class="de"><u style="font-size: 30px;">conference event</u><br><br>
+            <div class="d2"><img src="conference.jpg"><span>1st International Conference on Revitalising and
+                    Rejuvenating Bhartiya Knowledge System for making Bharat Vishwaguru by 2047</span></div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
